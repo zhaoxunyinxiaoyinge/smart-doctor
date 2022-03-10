@@ -1,15 +1,50 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/home/home",
+    "pages/my/my",
+    "pages/cate/cate",
+    "pages/car/car"
   ],
   "subPackages": [],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#aa0000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "app页面",
+    "navigationBarBackgroundColor": "#05073e",
     "backgroundColor": "#aaff7f",
     "enablePullDownRefresh": true,
     "onReachBottomDistance": 100
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#550814",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "static/home_1.png",
+        "selectedIconPath": "./static/home.png",
+        "text": "home"
+      },
+      {
+        "pagePath": "pages/cate/cate",
+        "iconPath": "static/category.png",
+        "selectedIconPath": "static/categoryselected.png",
+        "text": "car"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "iconPath": "static/cart.png",
+        "selectedIconPath": "static/cart_fill_light.png",
+        "text": "cate"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "./static/my.png",
+        "selectedIconPath": "static/user.png",
+        "text": "my"
+      }
+    ]
   },
   "usingComponents": {}
 }

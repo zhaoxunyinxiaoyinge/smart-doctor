@@ -1,18 +1,74 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/home/home",
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/cate/cate",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/car/car",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#aa0000",
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "app页面",
+		"navigationBarBackgroundColor": "#05073e",
 		"backgroundColor": "#aaff7f",
 		"enablePullDownRefresh":true,
 		"onReachBottomDistance":100
+	},
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#550814",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/home/home",
+			"iconPath": "static/home_1.png",
+			"selectedIconPath": "./static/home.png",
+			"text": "home"
+		}, {
+			"pagePath": "pages/cate/cate",
+			"iconPath": "static/category.png",
+			"selectedIconPath": "static/categoryselected.png",
+			"text": "car"
+		},
+		{
+			"pagePath": "pages/car/car",
+			"iconPath": "static/cart.png",
+			"selectedIconPath": "static/cart_fill_light.png",
+			"text": "cate"
+		}, {
+			"pagePath": "pages/my/my",
+			"iconPath": "./static/my.png",
+			"selectedIconPath": "static/user.png",
+			"text": "my"
+		}
+		]
 	}
 }
