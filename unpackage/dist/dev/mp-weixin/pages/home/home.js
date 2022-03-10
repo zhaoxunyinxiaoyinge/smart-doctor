@@ -134,19 +134,47 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 18));
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _request = _interopRequireDefault(__webpack_require__(/*! ../../utils/request.js */ 21));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var _default =
+
 {
   data: function data() {
-    return {};
+    return {
+      carouseList: ['http://wap.baidu.com/static/img/r/image/2014-04-18/a250be0f0af4d9dd116b4bf1f37dc5c6.jpg',
+      "http://img0.bdstatic.com/img/image/wise/4%E5%AB%A9%E8%90%9D%E8%8E%89.jpg"],
+
+      autoplay: true,
+      interval: 2000,
+      indicatorDots: true,
+      duration: 1000 };
 
 
-  } };exports.default = _default;
+  },
+  onLoad: function onLoad() {
+    this.getData();
+
+  },
+  methods: {
+    getData: function getData() {return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var res;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
+                  (0, _request.default)({
+                    url: "https://www.jianshu.com/asimov/notes/75280343/reward_section",
+                    method: 'get' }));case 2:res = _context.sent;
+
+                console.log(res);case 4:case "end":return _context.stop();}}}, _callee);}))();
+    } } };exports.default = _default;
 
 /***/ })
 ],[[12,"common/runtime","common/vendor"]]]);

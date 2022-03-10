@@ -53,9 +53,15 @@
         "appid" : "wx680cb0d0e3ab3e70",
         "setting" : {
             "urlCheck" : false,
-            "minified" : true
+            "minified" : true,
+            "es6" : true
         },
-        "usingComponents" : true
+        "usingComponents" : true,
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "开发"
+            }
+        }
     },
     "mp-alipay" : {
         "usingComponents" : true

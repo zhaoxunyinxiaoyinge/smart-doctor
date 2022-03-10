@@ -34,6 +34,20 @@
             
         }
     ],
+	"subPackages": [{
+		"root": "subPacks",
+        "pages":[{
+                    "path" : "homeDetail/homeDetail",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "详情页面",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+	}],
+	
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "app页面",

@@ -5,7 +5,14 @@
     "pages/cate/cate",
     "pages/car/car"
   ],
-  "subPackages": [],
+  "subPackages": [
+    {
+      "root": "subPacks",
+      "pages": [
+        "homeDetail/homeDetail"
+      ]
+    }
+  ],
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "app页面",
@@ -45,6 +52,11 @@
         "text": "my"
       }
     ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "开发"
+    }
   },
   "usingComponents": {}
 }

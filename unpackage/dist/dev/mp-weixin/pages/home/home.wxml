@@ -1,1 +1,1 @@
-<view><text>中国人天下第一</text></view>
+<view><swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"><block wx:for="{{carouseList}}" wx:for-item="item" wx:for-index="index"><swiper-item><view class="swiper-item uni-bg-blue"><image style="width:100%;background-color:#eeeeee;" src="{{item}}"></image></view></swiper-item></block></swiper></view>
